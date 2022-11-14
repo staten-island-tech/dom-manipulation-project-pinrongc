@@ -23,3 +23,18 @@ function backgroundAndText (background, text) {
 Domselectors.button.addEventListener("click",function(){
     backgroundAndText(Domselectors.box,Domselectors.text);
 });
+
+function changeLi() {
+    let pointIndex= 1;
+    Domselectors.points.forEach((point) =>{
+        point.addEventListener("click", function(){
+            point.textContent = `Hello I am point ${pointIndex}`;
+            pointIndex++;
+        })
+    })
+
+}
+
+changeLi()
+
+
