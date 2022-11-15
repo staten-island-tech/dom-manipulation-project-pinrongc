@@ -3,6 +3,7 @@ const text = document.querySelector("#text");
 
 console.log(button);  */
 
+/* 
 const Domselectors = {
     button: document.getElementById("btn"),
     text: document.querySelector("#text"),
@@ -36,5 +37,19 @@ function changeLi() {
 }
 
 changeLi()
+ */
 
+const Domselectors = {
+    button: document.getElementById ("btn"),
+    box: document.getElementById("container-box"),
+    input: document.querySelector(`#input`),
+};
+
+/* const cat = "meow";
+Domselectors.box.insertAdjacentHTML("afterend", `<h1>We are an H1</h1>`);
+ */
+Domselectors.button.addEventListener("click", function() {
+    let input = Domselectors.input.value;
+   console.log(input);
+});
 
