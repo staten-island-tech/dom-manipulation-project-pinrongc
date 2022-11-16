@@ -45,9 +45,9 @@ const Domselectors = {
     input: document.querySelector(`#input`),
 };
 
-/* const cat = "meow";
-Domselectors.box.insertAdjacentHTML("afterend", `<h1>We are an H1</h1>`);
- */
+const cat = "meow";
+Domselectors.box.insertAdjacentHTML("beforeend", `<h1>We are an H1</h1>`);
+
 Domselectors.button.addEventListener("click", function() {
     let input = Domselectors.input.value;
    console.log(input);
