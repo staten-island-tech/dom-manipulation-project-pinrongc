@@ -7,7 +7,7 @@
     text-align: center;
 } */
 
-#container-box {
+/* #container-box {
     background-color: black;
     font-size: 2vh;
     color: cornsilk;
@@ -16,4 +16,16 @@
 
 .cat-poster {
     width: 10cm;
+} */
+
+body {
+    background-color: rgb(145, 213, 219);
+    text-align: center;
+    font-size: large;
+}
+
+.albums,
+.artists,
+.images {
+    margin: 20px;
 }
