@@ -9,15 +9,31 @@
 </head>
 
 <body>
+    <h1>What Are You Listening To?</h1>
+    <section class="box">
+        <form id="form">
+            <div class="Music">
+                <div class="Albums">
+                    <label for="title">Album Name</label>
+                    <input type="text" id="title" class="text-box" required>
+                </div>
+                <div class="Artists">
+                    <label for="artist">Artist</label>
+                    <input type="text" id="artist" class="text-box" required>
+                </div>
+                <div class="Images">
+                    <label for="url">Enter Image URL Here</label>
+                    <input type="text" id="url" class="text-box" required>
+                </div>
+            </div>
+            <div class="End">
+                <input type="submit" value="Submit" class="btn">
+            </div>
+        </form>
+    </section>
+    <section class="display" id="display">
 
-    <div id="container-box">
-        <p id="text">we can add more text with input</p>
-        <input type="text" id="input" />
-        <button type="button">Click Me!</button>
-
-    </div>
-
-    <script src="index.js"></script>
+        <script src="index.js"></script>
 </body>
 
 </html>
