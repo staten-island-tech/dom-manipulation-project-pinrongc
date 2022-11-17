@@ -1,7 +1,3 @@
-/* const button = document.getElementById("btn");
-const text = document.querySelector("#text");
-
-console.log(button);  */
 
 /* 
 const Domselectors = {
@@ -38,7 +34,7 @@ function changeLi() {
 
 changeLi()
  */
-
+/* 
 const Domselectors = {
     button: document.getElementById ("btn"),
     box: document.getElementById("container-box"),
@@ -52,4 +48,33 @@ Domselectors.button.addEventListener("click", function() {
     let input = Domselectors.input.value;
    console.log(input);
 });
+
+ */
+
+
+const button = document.getElementById("btn");
+const text = document.querySelector("#text");
+
+console.log(button);  
+
+
+const DOMselectors = {
+    display: document.getElementById("display"),
+    form: document.getElementById("form"),
+    title: document.getElementById("Album"),
+    artist: document.getElementById("Artist"),
+    image: document.getElementById("Image"),
+    button: document.getElementById ('btn'),
+
+}
+
+console.log(DOMselectors);
+
+function show(Album) {
+    DOMselectors.display.
+}
+
+DOMselectors.button.addEventListener("click", function()) {
+
+}
 
