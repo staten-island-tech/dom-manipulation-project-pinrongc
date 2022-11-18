@@ -64,17 +64,26 @@ const DOMselectors = {
     title: document.getElementById("Album"),
     artist: document.getElementById("Artist"),
     image: document.getElementById("Image"),
-    button: document.getElementById ('btn'),
+    button: document.getElementById ("btn"),
+    url: document.getElementById ("url")
 
 }
 
 console.log(DOMselectors);
 
 function show(Album) {
-    DOMselectors.display.
+    DOMselectors.display.insertAdjacentHTML(
+        "afterend",
+        `<div class = "display"/>
+        <img class= "Image-display" src= "$(album.url)"/>`
+        
+    )
 }
 
-DOMselectors.button.addEventListener("click", function()) {
+DOMselectors.form.addEventListener("submit", function(){
+    let album = {};
+    album.artist 
+    album.
 
-}
+})
 
