@@ -71,19 +71,22 @@ const DOMselectors = {
 
 console.log(DOMselectors);
 
-function show(Album) {
-    DOMselectors.display.insertAdjacentHTML(
-        "afterend",
-        `<div class = "display"/>
-        <img class= "Image-display" src= "$(album.url)"/>`
+
+DOMselectors.display.insertAdjacentHTML(
+    "afterend",
+    `<div class = "display"/>
+    <img class= "display-img" src= "$(album.url)"/>`
+
         
     )
-}
+
 
 DOMselectors.form.addEventListener("submit", function(){
     let album = {};
-    album.artist 
-    album.
+    album.artist=document.getElementById("artist");
+    album.title=document.getElementById("title");
+    album.image=document.getElementById("image");
 
 })
+console.log(album)
 
