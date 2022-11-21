@@ -52,19 +52,12 @@ Domselectors.button.addEventListener("click", function() {
  */
 
 
-const button = document.getElementById("btn");
-const text = document.querySelector("#text");
-
-console.log(button);  
-
-
 const DOMselectors = {
     display: document.getElementById("display"),
     form: document.getElementById("form"),
     title: document.getElementById("Album"),
     artist: document.getElementById("Artist"),
     image: document.getElementById("Image"),
-    button: document.getElementById ("btn"),
     url: document.getElementById ("url")
 
 }
@@ -74,18 +67,20 @@ console.log(DOMselectors);
 
 DOMselectors.display.insertAdjacentHTML(
     "afterend",
-    `<div class = "display"/>
-    <img class= "display-img" src= "$(album.url)"/>`
 
-        
-    )
-
+    <div class= "display-card" id="display-card">
+    <img class= "display-img" src= "$(album.url)"/>,
+    <h2 class="display-artist">${album.artist}</h2>,
+    <h3 class= "display-album">${album.title}</h3>
+    </div>
+   
+    );
 
 DOMselectors.form.addEventListener("submit", function(){
     let album = {};
-    album.artist=document.getElementById("artist");
-    album.title=document.getElementById("title");
-    album.image=document.getElementById("image");
+    album.artist=document.getElementById("artist").value;
+    album.title=document.getElementById("title").value;
+    album.url=document.getElementById("url").value;
 
 })
 console.log(album)
