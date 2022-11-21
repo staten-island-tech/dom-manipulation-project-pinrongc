@@ -58,30 +58,37 @@ const DOMselectors = {
     title: document.getElementById("Album"),
     artist: document.getElementById("Artist"),
     image: document.getElementById("Image"),
-    url: document.getElementById ("url")
-
+    url: document.getElementById ("url"),
+    remove: document.getElementById ("remove")
 }
 
-console.log(DOMselectors);
+DOMselectors.form.addEventListener("submit", function(event){
+    event.preventDefault();
 
-
-DOMselectors.display.insertAdjacentHTML(
-    "afterend",
-
-    <div class= "display-card" id="display-card">
-    <img class= "display-img" src= "$(album.url)"/>,
-    <h2 class="display-artist">${album.artist}</h2>,
-    <h3 class= "display-album">${album.title}</h3>
-    </div>
-   
-    );
-
-DOMselectors.form.addEventListener("submit", function(){
     let album = {};
     album.artist=document.getElementById("artist").value;
     album.title=document.getElementById("title").value;
     album.url=document.getElementById("url").value;
 
+
+    DOMselectors.display.insertAdjacentHTML(
+    "afterend",
+    `<div class= "display-card" id="display-card">
+    <img class= "display-img" src= "${album.url}"/>
+    <h2 class="display-artist">${album.artist}</h2>
+    <h3 class= "display-album">${album.title}</h3>
+    <button id = "removebtn">Remove Album</button>
+    </div>`
+   );
+   
+   function remove() {
+    let removebtn = document.getElementById(`removebtn`)
+ removebtn.addEventListener("click", function(){
+    document.getElementById(`display-card`).remove()
+ })
+   }
+   remove();
 })
-console.log(album)
+
+
 
