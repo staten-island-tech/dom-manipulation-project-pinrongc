@@ -66,9 +66,9 @@ DOMselectors.form.addEventListener("submit", function(event){
     event.preventDefault();
 
     let album = {};
-    album.artist=document.getElementById("artist").value;
-    album.title=document.getElementById("title").value;
-    album.url=document.getElementById("url").value;
+    album.artist= DOMselectors.artist.value;
+    album.title= DOMselectors.title.value;
+    album.url= DOMselectors.url.value;
 
 
     DOMselectors.display.insertAdjacentHTML(
@@ -89,6 +89,13 @@ DOMselectors.form.addEventListener("submit", function(event){
    }
    remove();
 })
+
+function clearinput () {
+    DOMselectors.title.value = "";
+    DOMselectors.artist.value = "";
+    DOMselectors.url.value = "";
+}
+clearinput();
 
 
 
