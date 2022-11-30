@@ -88,7 +88,6 @@ DOMselectors.form.addEventListener("submit", function(event){
  })
    }
    remove();
-})
 
 function clearinput () {
     DOMselectors.title.value = "";
@@ -96,6 +95,11 @@ function clearinput () {
     DOMselectors.url.value = "";
 }
 clearinput();
+
+
+})
+
+
 
 
 
