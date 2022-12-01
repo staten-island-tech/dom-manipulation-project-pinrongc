@@ -55,9 +55,9 @@ Domselectors.button.addEventListener("click", function() {
 const DOMselectors = {
     display: document.getElementById("display"),
     form: document.getElementById("form"),
-    title: document.getElementById("Album"),
-    artist: document.getElementById("Artist"),
-    image: document.getElementById("Image"),
+    title: document.getElementById("title"),
+    artist: document.getElementById("artist"),
+    image: document.getElementById("image"),
     url: document.getElementById ("url"),
     remove: document.getElementById ("remove")
 }
